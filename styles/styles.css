@@ -1,0 +1,24 @@
+.main-content-alignment {
+    margin-top: 160px;
+    display: grid;
+    position: relative;
+    grid-template-areas: 
+    ". . ."
+    ". google-logo ."
+    ". search-bar .";
+    justify-content: center;
+}
+
+.google-logo {
+    grid-area: google-logo;
+    margin: 0 auto;
+}
+
+.search-bar {
+    margin-top: 30px;
+    grid-area: search-bar;
+    width: 570px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid #dfe1e5;
+}
