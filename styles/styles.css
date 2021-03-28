@@ -22,3 +22,33 @@
     border-radius: 30px;
     border: 1px solid #dfe1e5;
 }
+
+.header-container {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;    
+    grid-template-areas: "about store . gmail images app-icon sign-in-button";    
+}
+
+.about {
+    grid-area: about;
+}
+
+.store {
+    grid-area: store;
+}
+
+.gmail {
+    grid-area: gmail;
+}
+
+.images {
+    grid-area: images;
+}
+
+.app-icon {
+    grid-area: app-icon;
+}
+
+.sign-in-button {
+    grid-area: sign-in-button;
+}
