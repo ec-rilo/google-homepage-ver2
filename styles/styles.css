@@ -31,8 +31,9 @@
 
 .header-container {
     display: grid;
-    grid-template-columns: 60px 60px 1fr 50px 50px 50px 50px;    
-    grid-template-areas: "about store . gmail images app-icon sign-in-button";    
+    grid-template-columns: 60px 60px .98fr 50px 50px 50px 100px;    
+    grid-template-areas: "about store . gmail images app-icon sign-in-button"; 
+    height: 45px;   
 }
 
 .about {
@@ -84,6 +85,20 @@
     opacity: .55;
 }
 
-.sign-in-button {
+.sign-in-button-container {
     grid-area: sign-in-button;
+    align-self: center;
+    justify-self: center;
+}
+
+.sign-in-button {
+    font-family: var(--header-text-font);
+    font-size: var(--header-text-size);
+    background-color:#4285f4;
+    font-weight: bold;
+    color: white;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 3px;
+    border-color: transparent;
 }
