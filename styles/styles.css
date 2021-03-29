@@ -5,9 +5,9 @@
 }
 
 .main-content-alignment {
-    margin-top: 160px;
     display: grid;
     position: relative;
+    margin-top: 160px;
     grid-template-areas: 
     ". . ."
     ". google-logo ."
@@ -31,12 +31,14 @@
 
 .header-container {
     display: grid;
-    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;    
+    grid-template-columns: 60px 60px 1fr 50px 50px 50px 50px;    
     grid-template-areas: "about store . gmail images app-icon sign-in-button";    
 }
 
 .about {
     grid-area: about;
+    justify-self: center;
+    align-self: center;
     font-family: var(--header-text-font);
     font-size: var(--header-text-size);
     color: var(--header-text-color);
@@ -45,6 +47,8 @@
 
 .store {
     grid-area: store;
+    align-self: center;
+    justify-self: center;
     font-family: var(--header-text-font);
     font-size: var(--header-text-size);
     color: var(--header-text-color);
@@ -52,6 +56,8 @@
 
 .gmail {
     grid-area: gmail;
+    align-self: center;
+    justify-self: center;
     font-family: var(--header-text-font);
     font-size: var(--header-text-size);
     color: var(--header-text-color);
@@ -59,6 +65,8 @@
 
 .images {
     grid-area: images;
+    align-self: center;
+    justify-self: center;
     font-family: var(--header-text-font);
     font-size: var(--header-text-size);
     color: var(--header-text-color);
