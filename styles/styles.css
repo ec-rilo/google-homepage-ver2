@@ -1,3 +1,9 @@
+:root {
+    --header-text-font: arial, sans-serif;
+    --header-text-size: 13px;
+    --header-text-color: rgba(0,0,0,0.87);
+}
+
 .main-content-alignment {
     margin-top: 160px;
     display: grid;
@@ -31,24 +37,39 @@
 
 .about {
     grid-area: about;
+    font-family: var(--header-text-font);
+    font-size: var(--header-text-size);
+    color: var(--header-text-color);
 }
+
 
 .store {
     grid-area: store;
+    font-family: var(--header-text-font);
+    font-size: var(--header-text-size);
+    color: var(--header-text-color);
 }
 
 .gmail {
     grid-area: gmail;
+    font-family: var(--header-text-font);
+    font-size: var(--header-text-size);
+    color: var(--header-text-color);
 }
 
 .images {
     grid-area: images;
+    font-family: var(--header-text-font);
+    font-size: var(--header-text-size);
+    color: var(--header-text-color);
 }
 
 .app-icon {
     grid-area: app-icon;
+    var(--base-header-text);
 }
 
 .sign-in-button {
     grid-area: sign-in-button;
+    var(--base-header-text);
 }
