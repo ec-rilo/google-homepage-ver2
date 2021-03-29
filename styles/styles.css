@@ -74,10 +74,8 @@
 
 .app-icon {
     grid-area: app-icon;
-    var(--base-header-text);
 }
 
 .sign-in-button {
     grid-area: sign-in-button;
-    var(--base-header-text);
 }
