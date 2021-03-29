@@ -2,12 +2,15 @@
     --header-text-font: arial, sans-serif;
     --header-text-size: 13px;
     --header-text-color: rgba(0,0,0,0.87);
+    
+    --footer-text-size: 14px;
+    --footer-text-alignment: center;
 }
 
 .main-content-alignment {
     display: grid;
     position: relative;
-    margin-top: 160px;
+    margin-top: 100px;
     grid-template-areas: 
     ". . ."
     ". google-logo ."
@@ -31,9 +34,9 @@
 
 .header-container {
     display: grid;
-    grid-template-columns: 60px 60px .98fr 50px 50px 50px 100px;    
+    grid-template-columns: 60px 60px 1fr 50px 50px 50px 100px;    
     grid-template-areas: "about store . gmail images app-icon sign-in-button"; 
-    height: 45px;   
+    height: 50px;
 }
 
 .about {
@@ -77,6 +80,7 @@
     grid-area: app-icon;
     align-self: center;
     justify-self: center;
+    margin-top: 5px;
 }
 
 .app-icon {
@@ -97,8 +101,71 @@
     background-color:#4285f4;
     font-weight: bold;
     color: white;
-    padding: 0 10px;
+    padding: 0 13px;
     height: 30px;
     border-radius: 3px;
     border-color: transparent;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-areas: "advertising business HSW . privacy terms settings";
+    grid-template-columns: 100px 100px 150px 1fr 50px 50px 50px; /* FIXME: Make the 50px align to the amount of space text takes up */
+    grid-template-rows: 50px;
+    margin-top: 350px;
+}
+
+.footer-advertising-link {
+    grid-area: advertising;
+    font-family: var(--header-text-font);
+    font-size: var(--footer-text-size);
+    justify-self: var(--footer-text-alignment);
+    align-self: var(--footer-text-alignment);
+    color: var(--header-text-color);
+    margin-left: 10px;
+}
+
+.footer-business-link {
+    grid-area: business;
+    font-family: var(--header-text-font);
+    font-size: var(--footer-text-size);
+    color: var(--header-text-color);
+    justify-self: var(--footer-text-alignment);
+    align-self: var(--footer-text-alignment);
+}
+
+.footer-how-search-works-link {
+    grid-area: HSW; /* How Search Works */
+    font-family: var(--header-text-font);
+    font-size: var(--footer-text-size);
+    color: var(--header-text-color);
+    justify-self: var(--footer-text-alignment);
+    align-self: var(--footer-text-alignment);
+}
+
+.footer-privacy-link {
+    grid-area: privacy;
+    font-family: var(--header-text-font);
+    font-size: var(--footer-text-size);
+    color: var(--header-text-color);
+    justify-self: var(--footer-text-alignment);
+    align-self: var(--footer-text-alignment);
+}
+
+.footer-terms-link {
+    grid-area: terms;
+    font-family: var(--header-text-font);
+    font-size: var(--footer-text-size);
+    color: var(--header-text-color);
+    justify-self: var(--footer-text-alignment);
+    align-self: var(--footer-text-alignment);
+}
+
+.footer-settings-link {
+    grid-area: settings;
+    font-family: var(--header-text-font);
+    font-size: var(--footer-text-size);
+    color: var(--header-text-color);
+    justify-self: var(--footer-text-alignment);
+    align-self: var(--footer-text-alignment);
 }
