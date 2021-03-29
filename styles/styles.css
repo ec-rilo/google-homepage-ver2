@@ -9,27 +9,47 @@
 
 .main-content-alignment {
     display: grid;
-    position: relative;
     margin-top: 100px;
     grid-template-areas: 
-    ". . ."
     ". google-logo ."
     ". search-bar .";
-    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .google-logo {
     grid-area: google-logo;
-    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
 }
 
-.search-bar {
-    margin-top: 30px;
+.search-bar-container {
     grid-area: search-bar;
-    width: 570px;
+    margin-top: 30px;
+}
+
+.search-field {
+    width: 490px;
     height: 40px;
-    border-radius: 30px;
+    border-radius: 20px;
     border: 1px solid #dfe1e5;
+}
+
+.search-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0.55;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+.google-microphone-icon {
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    margin-top: 12px;
+    margin-left: 465px;
 }
 
 .header-container {
