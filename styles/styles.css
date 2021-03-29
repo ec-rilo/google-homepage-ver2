@@ -5,6 +5,7 @@
     
     --footer-text-size: 14px;
     --footer-text-alignment: center;
+    --footer-text-color: #5F6368;
 }
 
 .main-content-alignment {
@@ -12,9 +13,10 @@
     margin-top: 100px;
     grid-template-areas: 
     ". google-logo ."
-    ". search-bar .";
+    ". search-bar ."
+    ". submission-buttons .";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .google-logo {
@@ -50,6 +52,42 @@
     height: 20px;
     margin-top: 12px;
     margin-left: 465px;
+}
+
+.submission-buttons-container {
+    display: grid;
+    grid-area: submission-buttons;
+    grid-template-areas: "search-button rand-search-button";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.search-button {
+    grid-area search-button;
+    font-family: var(--header-text-font);
+    font-size: var(--footer-text-size);
+    color: var(--footer-text-color);
+    width: 130px;
+    height: 33px;
+    border-color: transparent;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    margin-left: 110px;
+    margin-top: 10px;
+}
+
+.random-search-button {
+    grid-area: rand-search-button;
+    font-family: var(--header-text-font);
+    font-size: var(--footer-text-size);
+    color: var(--footer-text-color);
+    width: 140px;
+    height: 33px;
+    border-color: transparent;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
 }
 
 .header-container {
@@ -132,7 +170,7 @@
     grid-template-areas: "advertising business HSW . privacy terms settings";
     grid-template-columns: 100px 100px 150px 1fr 50px 50px 50px; /* FIXME: Make the 50px align to the amount of space text takes up */
     grid-template-rows: 50px;
-    margin-top: 350px;
+    margin-top: 240px;
 }
 
 .footer-advertising-link {
