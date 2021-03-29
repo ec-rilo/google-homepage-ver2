@@ -72,8 +72,16 @@
     color: var(--header-text-color);
 }
 
-.app-icon {
+.app-icon-container {
     grid-area: app-icon;
+    align-self: center;
+    justify-self: center;
+}
+
+.app-icon {
+    width: 25px;
+    height: 25px;
+    opacity: .55;
 }
 
 .sign-in-button {
