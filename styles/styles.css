@@ -92,9 +92,13 @@
 
 .header-container {
     display: grid;
-    grid-template-columns: 60px 60px 1fr 50px 50px 50px 100px;    
-    grid-template-areas: "about store . gmail images app-icon sign-in-button"; 
-    height: 50px;
+    position: fixed;
+    grid-template-columns: 50px 50px .97fr 50px 50px 50px 90px;    
+    grid-template-areas: "about store . gmail images app-icon sign-in-button";
+    width: 100%;
+    padding-left: 17px;
+    top: 15px;
+    left: 0px;
 }
 
 .about {
@@ -159,7 +163,7 @@
     background-color:#4285f4;
     font-weight: bold;
     color: white;
-    padding: 0 13px;
+    padding: 0 10px;
     height: 30px;
     border-radius: 3px;
     border-color: transparent;
