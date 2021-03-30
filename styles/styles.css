@@ -167,10 +167,19 @@
 
 .footer-container {
     display: grid;
-    grid-template-areas: "advertising business HSW . privacy terms settings";
-    grid-template-columns: 100px 100px 150px 1fr 50px 50px 50px; /* FIXME: Make the 50px align to the amount of space text takes up */
-    grid-template-rows: 50px;
-    margin-top: 240px;
+    position: fixed;
+    background-color: #F2F2F2;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    grid-template-areas:
+    "advertising business HSW . privacy terms settings";
+    grid-template-columns: 100px 90px 140px .97fr 70px 70px 70px; /* FIXME: Make the 50px align to the amount of space text takes up */
+    grid-template-rows: 45px;
+    left: 0px;
+    right: 0px;
+    bottom: -5px;
+    width: 100%;
+    z-index: 9999;
+    padding-left: 10px;
 }
 
 .footer-advertising-link {
@@ -179,7 +188,7 @@
     font-size: var(--footer-text-size);
     justify-self: var(--footer-text-alignment);
     align-self: var(--footer-text-alignment);
-    color: var(--header-text-color);
+    color: var(--footer-text-color);
     margin-left: 10px;
 }
 
@@ -187,7 +196,7 @@
     grid-area: business;
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
-    color: var(--header-text-color);
+    color: var(--footer-text-color);
     justify-self: var(--footer-text-alignment);
     align-self: var(--footer-text-alignment);
 }
@@ -196,7 +205,7 @@
     grid-area: HSW; /* How Search Works */
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
-    color: var(--header-text-color);
+    color: var(--footer-text-color);
     justify-self: var(--footer-text-alignment);
     align-self: var(--footer-text-alignment);
 }
@@ -205,7 +214,7 @@
     grid-area: privacy;
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
-    color: var(--header-text-color);
+    color: var(--footer-text-color);
     justify-self: var(--footer-text-alignment);
     align-self: var(--footer-text-alignment);
 }
@@ -214,7 +223,7 @@
     grid-area: terms;
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
-    color: var(--header-text-color);
+    color: var(--footer-text-color);
     justify-self: var(--footer-text-alignment);
     align-self: var(--footer-text-alignment);
 }
@@ -223,7 +232,7 @@
     grid-area: settings;
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
-    color: var(--header-text-color);
+    color: var(--footer-text-color);
     justify-self: var(--footer-text-alignment);
     align-self: var(--footer-text-alignment);
 }
