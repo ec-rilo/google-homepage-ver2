@@ -7,6 +7,15 @@
     --footer-text-alignment: center;
     --footer-text-color: #5F6368;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+input:hover {
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
 /* Center Content */
 .main-content-alignment {
     display: grid;
