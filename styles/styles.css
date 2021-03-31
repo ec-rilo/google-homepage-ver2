@@ -88,7 +88,7 @@ input:focus {
 }
 
 .search-button {
-    grid-area search-button;
+    grid-area: search-button;
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
     color: var(--footer-text-color);
