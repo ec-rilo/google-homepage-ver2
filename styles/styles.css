@@ -12,9 +12,19 @@ a:hover {
     text-decoration: underline;
 }
 
-input:hover {
+#SBC:hover {
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
 }
+
+#SBC:focus {
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+    outline: none;
+}
+
+
 
 /* Center Content */
 .main-content-alignment {
@@ -35,15 +45,21 @@ input:hover {
 }
 
 .search-bar-container {
+    display: grid;
     grid-area: search-bar;
     margin-top: 30px;
-}
-
-.search-field {
     width: 580px;
     height: 40px;
     border-radius: 20px;
     border: 1px solid #dfe1e5;
+}
+
+.search-field {
+    justify-self: center;
+    align-self: center;
+    width: 490px;
+    height: 25px;
+    border-color: transparent;
 }
 
 .search-icon {
@@ -51,7 +67,7 @@ input:hover {
     width: 20px;
     height: 20px;
     opacity: 0.55;
-    margin-top: 12px;
+    margin-top: 11px;
     margin-left: 15px;
 }
 
