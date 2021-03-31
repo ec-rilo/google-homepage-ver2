@@ -7,7 +7,7 @@
     --footer-text-alignment: center;
     --footer-text-color: #5F6368;
 }
-
+/* Center Content */
 .main-content-alignment {
     display: grid;
     margin-top: 150px;
@@ -90,6 +90,8 @@
     margin-top: 10px;
 }
 
+/* Header Navigation Bar Content */
+
 .header-container {
     display: grid;
     position: fixed;
@@ -105,6 +107,7 @@
     grid-area: about;
     justify-self: center;
     align-self: center;
+    text-decoration: none;
     font-family: var(--header-text-font);
     font-size: var(--header-text-size);
     color: var(--header-text-color);
@@ -115,6 +118,7 @@
     grid-area: store;
     align-self: center;
     justify-self: center;
+    text-decoration: none;
     font-family: var(--header-text-font);
     font-size: var(--header-text-size);
     color: var(--header-text-color);
@@ -124,6 +128,7 @@
     grid-area: gmail;
     align-self: center;
     justify-self: center;
+    text-decoration: none;
     font-family: var(--header-text-font);
     font-size: var(--header-text-size);
     color: var(--header-text-color);
@@ -133,6 +138,7 @@
     grid-area: images;
     align-self: center;
     justify-self: center;
+    text-decoration: none;
     font-family: var(--header-text-font);
     font-size: var(--header-text-size);
     color: var(--header-text-color);
@@ -169,6 +175,8 @@
     border-color: transparent;
 }
 
+/* Footer content */
+
 .footer-container {
     display: grid;
     position: fixed;
@@ -188,16 +196,18 @@
 
 .footer-advertising-link {
     grid-area: advertising;
+    margin-left: 10px;
+    text-decoration: none;
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
     justify-self: var(--footer-text-alignment);
     align-self: var(--footer-text-alignment);
     color: var(--footer-text-color);
-    margin-left: 10px;
 }
 
 .footer-business-link {
     grid-area: business;
+    text-decoration: none;
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
     color: var(--footer-text-color);
@@ -207,6 +217,7 @@
 
 .footer-how-search-works-link {
     grid-area: HSW; /* How Search Works */
+    text-decoration: none;
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
     color: var(--footer-text-color);
@@ -216,6 +227,7 @@
 
 .footer-privacy-link {
     grid-area: privacy;
+    text-decoration: none;
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
     color: var(--footer-text-color);
@@ -225,6 +237,7 @@
 
 .footer-terms-link {
     grid-area: terms;
+    text-decoration: none;
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
     color: var(--footer-text-color);
@@ -234,6 +247,7 @@
 
 .footer-settings-link {
     grid-area: settings;
+    text-decoration: none;
     font-family: var(--header-text-font);
     font-size: var(--footer-text-size);
     color: var(--footer-text-color);
