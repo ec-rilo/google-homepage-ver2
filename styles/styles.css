@@ -200,6 +200,10 @@ input:focus {
     opacity: .55;
 }
 
+.app-icon:hover {
+    opacity: 1;
+}
+
 .sign-in-button-container {
     grid-area: sign-in-button;
     align-self: center;
