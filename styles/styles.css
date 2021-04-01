@@ -14,17 +14,18 @@ a:hover {
 
 #SBC:hover {
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+    /* Search Bar Container hover */
 }
 
 #SBC:focus {
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+    /* Search Bar Container focus */
+
 }
 
 input:focus {
     outline: none;
 }
-
-
 
 /* Center Content */
 .main-content-alignment {
@@ -101,6 +102,15 @@ input:focus {
     margin-top: 10px;
 }
 
+.search-button:hover {
+    border:1px solid rgba(0, 0, 0, .2);
+    color: black;
+}
+
+.search-button:focus {
+    outline: none;
+}
+
 .random-search-button {
     grid-area: rand-search-button;
     font-family: var(--header-text-font);
@@ -113,6 +123,15 @@ input:focus {
     border-radius: 5px;
     margin-left: 5px;
     margin-top: 10px;
+}
+
+.random-search-button:hover {
+    border:1px solid rgba(0, 0, 0, .2);
+    color: black;
+}
+
+.random-search-button:focus {
+    outline: none;
 }
 
 /* Header Navigation Bar Content */
