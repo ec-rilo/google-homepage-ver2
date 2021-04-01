@@ -20,7 +20,6 @@ a:hover {
 #SBC:focus {
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
     /* Search Bar Container focus */
-
 }
 
 input:focus {
@@ -229,10 +228,10 @@ input:focus {
     grid-template-areas:
     "advertising business HSW . privacy terms settings";
     grid-template-columns: 100px 90px 140px .97fr 70px 70px 70px; /* FIXME: Make the 50px align to the amount of space text takes up */
-    grid-template-rows: 45px;
+    grid-template-rows: 40px;
     left: 0px;
     right: 0px;
-    bottom: -5px;
+    bottom: 0px;
     width: 100%;
     z-index: 9999;
     padding-left: 10px;
